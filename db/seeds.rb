@@ -1,0 +1,12 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+
+Product.create(name: 'Summer Pusheen Plush', description: 'Is the pool open yet? This Pusheen plush is ready for fun in the sun with her cool shades and colorful floaty. Plush features Pusheen wearing sunshades and a pool floaty. Plush measures approximately 10.5" tall and inner tube measures approximately 28" around. Ages 8+.', image:'Summer_Pusheen_Plush_003_web.jpg',price: 24.8)
+Product.create(name:'Birthday Pusheen Plush', description:'Birthdays are always memorable with good friends like Pusheen by your side... and with good cake, too! Plush toy measures approximately 11" tall from the top of the ear to bottom, 10.5" wide at the widest part of the belly, and 20.5" circumference around the widest part of the belly. All measurements are taken with a soft measuring tape and may vary. Ages 8+.', image: 'Birthday_Pusheen_plush_000_web.jpg', price: 24.8)
+Product.create(name:'Pusheen Two-Sided Pillow', description:'This super soft and adorable Pusheen pillow is the perfect accent for your couch or bed!  One side features Pusheen awake and the other side features her napping. Measures approximately 16.5" in height from between her ears to the bottom seam. Not for children under 1 year of age. Limit 1 per order', image: 'Pusheen-Pillow-2.png', price: 29.8)
+Product.create(name:'Large Squisheen Plush', description:'The Squisheen plush collection is here! New stretchy fabric makes the tubby tabby more soft and lovable than ever before. Available in two poses, this Pusheen plush is ready for cuddles! Plush toy measures approximately 15" tall and 36" around her belly. Her tail measures approximately 6" long. All measurements are taken with a soft measuring tape and may vary. Not for children under 1 year of age. Due to its size, we can only ship two Large Squisheen Plush Toys per order.', image:'Sitting_Squisheen_L_008.png', price: 50.8)
