@@ -1,8 +1,12 @@
-// Place all the styles related to the Products controller here.
+// Place all the styles related to the Shopper controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.products {
+.shopper {
+  h1 {
+    color: #50342b;
+  }
+
   table {
     border-collapse: collapse;
   }

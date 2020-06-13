@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Eshop</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body class="<%= controller.controller_name %>">
+    <div id="banner">
+        <%= image_tag("logo.gif", class: 'logo') %>
+        <h1><%= @page_title || "Pusheen Shop" %></h1>
+    </div>
+    <div id="columns">
+        <div id="side">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Catalog</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <%= yield %>
+        </div>
+    </div>
+</body>
+
 </html>
