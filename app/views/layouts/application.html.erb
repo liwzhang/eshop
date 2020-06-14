@@ -19,11 +19,18 @@
         <div id="side">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/shopper">Catalog</a></li>
-                <li><a href="#">Account</a></li>
-                <li><a href="/carts">Cart</a></li>
+                <li><a href="/">Catalog</a></li>
+                <li><a href="/admin">Account</a></li>
+                <li><a href="/">Cart</a></li>
             </ul>
-            hohum
+            <% if session[:user_id] %>
+            <ul>
+                <li><%= link_to 'Orders', orders_path %></li>
+                <li><%= link_to 'Products', products_path %></li>
+                <li><%= link_to 'Users', users_path %></li>
+            </ul>
+            <%= button_to 'Logout', logout_path, method: :delete %>
+            <% end %>
             <div id="cart">
                 <%= render @cart %>
             </div>

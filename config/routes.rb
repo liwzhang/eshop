@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'access/new'
+  get 'access/create'
+  get 'access/destroy'
+  get 'admin/index'
+  resources :users
   resources :orders
   resources :lineitems
   resources :carts
@@ -7,6 +12,13 @@ Rails.application.routes.draw do
   root 'shopper#index', as: 'shopper'
 
   get 'shopper', to: 'shopper#index'
+
+  get 'admin', to: 'admin#index'
+
+  get 'login', to: 'access#new'
+  post 'login', to: 'access#create'
+  delete 'logout', to: 'access#destroy'
+
 
   resources :products
 
