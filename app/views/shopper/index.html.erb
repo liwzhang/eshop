@@ -14,13 +14,16 @@
             <dl>
                 <dt><%= product.name %></dt><br>
                 <dd><%= product.description %></dd><br>
-                <%= product.price %>
+                <b><%= product.price %></b>
             </dl>
+
         </td>
 
         <td class="list_actions">
+            <%= button_to 'Add to Cart', lineitems_path(product_id: product), class: "add_to_cart", remote: true %>
             <%= link_to 'Show', product %><br>
         </td>
     </tr>
+
     <% end %>
 </table>

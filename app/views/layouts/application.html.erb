@@ -18,11 +18,15 @@
     <div id="columns">
         <div id="side">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Catalog</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/shopper">Catalog</a></li>
                 <li><a href="#">Account</a></li>
-                <li><a href="#">Cart</a></li>
+                <li><a href="/carts">Cart</a></li>
             </ul>
+            hohum
+            <div id="cart">
+                <%= render @cart %>
+            </div>
         </div>
         <div id="main">
             <%= yield %>
